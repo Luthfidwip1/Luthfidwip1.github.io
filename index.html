@@ -5,111 +5,161 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Luthfi Dwi Purwansyah — Software Engineer</title>
   <meta name="description" content="Portfolio — Luthfi Dwi Purwansyah. Software Engineer, full-stack web, backend services, IoT integrations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="name">Luthfi Dwi Purwansyah</h1>
-      <p class="tagline">Software Engineer — Full-stack, Backend, IoT &amp; Monitoring</p>
-      <nav class="contact">
-        <a href="mailto:luthfi14kahuripanpwk@gmail.com">luthfi14kahuripanpwk@gmail.com</a>
-        <span>•</span>
-        <a href="https://wa.me/6285603405043">WhatsApp: +62 856-0340-5043</a>
-        <span>•</span>
-        <a href="https://github.com/Luthfidwip1">GitHub</a>
-        <span>•</span>
-        <span>LinkedIn: Luthfi Dwi Purwansyah</span>
-      </nav>
-    </div>
-  </header>
+  <div class="page">
+    <header class="site-header">
+      <div class="container header-grid">
+        <div class="brand">
+          <a class="brand-link" href="/">Luthfi Dwi Purwansyah</a>
+          <div class="role">Software Engineer • Full-stack & Backend • IoT</div>
+        </div>
 
-  <main class="container">
-    <section id="about">
-      <h2>About</h2>
-      <p>Software Engineer berpengalaman dalam pengembangan aplikasi web full-stack, layanan backend, REST API, dan manajemen basis data. Berpengalaman membangun aplikasi bisnis (Inventory Management, Helpdesk Ticketing) dan integrasi IoT untuk monitoring peralatan.</p>
-    </section>
-
-    <section id="experience">
-      <h2>Experience</h2>
-      <div class="job">
-        <h3>Software Engineer — PT Tri Litho Jaya, Bandung</h3>
-        <p class="date">Sep 2024 – Present</p>
-        <ul>
-          <li Mengembangkan &amp; memelihara aplikasi web internal (Inventory Management, Helpdesk Ticketing).</li>
-          <li Merancang layanan backend, REST API, dan integrasi basis data.</li>
-          <li Implementasi workflow manajemen tiket dan integrasi IoT via MQTT untuk monitoring peralatan.</li>
-        </ul>
+        <nav class="nav">
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+          <button id="theme-toggle" aria-label="Toggle theme">🌗</button>
+        </nav>
       </div>
+    </header>
 
-      <div class="job">
-        <h3>Freelance — Software Engineer (Remote)</h3>
-        <p class="date">Jan 2025 – Oct 2025</p>
-        <ul>
-          <li Mendesain sistem edukasi interaktif menggunakan web, Raspberry Pi, RFID, dan sensor untuk pembelajaran anatomi SD.</li>
-          <li Memisahkan komunikasi perangkat, business logic, dan monitoring web untuk maintainability.</li>
-        </ul>
+    <main class="container">
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <h1 class="hero-title">Hi, saya Luthfi — Software Engineer</h1>
+            <p class="hero-sub">Membangun sistem web full-stack, layanan backend, dan solusi IoT untuk monitoring dan automasi operasional.</p>
+
+            <p class="cta">
+              <a class="btn" href="#contact">Hubungi saya</a>
+              <a class="btn ghost" href="https://github.com/Luthfidwip1">Lihat GitHub</a>
+            </p>
+
+            <ul class="skills-list">
+              <li>ASP.NET Core · C#</li>
+              <li>Java · Spring Boot</li>
+              <li>Python · FastAPI</li>
+              <li>TypeScript · React</li>
+              <li>MQTT · Raspberry Pi</li>
+            </ul>
+          </div>
+
+          <div class="hero-aside">
+            <div class="avatar-card">
+              <!-- Replace avatar.png with your photo in repo root to show it -->
+              <img src="/avatar.png" alt="Luthfi Dwi Purwansyah" onerror="this.style.display='none'">
+              <div class="avatar-meta">
+                <div class="name">Luthfi Dwi Purwansyah</div>
+                <div class="meta-muted">Bandung, Indonesia • <a href="https://wa.me/6285603405043">WA</a></div>
+              </div>
+            </div>
+
+            <div class="card contact-card">
+              <a href="mailto:luthfi14kahuripanpwk@gmail.com">luthfi14kahuripanpwk@gmail.com</a>
+              <a href="https://github.com/Luthfidwip1">@Luthfidwip1</a>
+              <div class="muted">LinkedIn: Luthfi Dwi Purwansyah</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Featured Projects</h2>
+        <div class="cards-grid">
+          <article class="card project">
+            <h3><a href="https://github.com/Luthfidwip1/InventoryManagementApi">InventoryManagementApi</a></h3>
+            <p class="muted">Inventory Management REST API and Worker Service in ASP.NET Core — backend API, DB integration, worker background tasks.</p>
+            <div class="tags">C# · ASP.NET Core · PostgreSQL · Worker Service</div>
+          </article>
+
+          <article class="card project">
+            <h3><a href="https://github.com/Luthfidwip1/belajar-ecommerce">belajar-ecommerce</a></h3>
+            <p class="muted">Eksperimen pembuatan aplikasi e-commerce — praktik arsitektur, modul produk & checkout.</p>
+            <div class="tags">C# · Web</div>
+          </article>
+
+          <article class="card project">
+            <h3><a href="https://github.com/Luthfidwip1/belajar-fullstack">belajar-fullstack</a></h3>
+            <p class="muted">Repository latihan full-stack untuk memahami integrasi frontend-backend dan deployment.</p>
+            <div class="tags">Full-stack · Practice</div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="time">Sep 2024 – Present</div>
+            <div class="body">
+              <h4>Software Engineer — PT Tri Litho Jaya</h4>
+              <p>Mengembangkan aplikasi internal (Inventory, Helpdesk), REST API, integrasi IoT (MQTT), dan monitoring berbasis web.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time">Jan 2025 – Oct 2025</div>
+            <div class="body">
+              <h4>Freelance — Software Engineer</h4>
+              <p>Mendesain sistem edukasi interaktif (Raspberry Pi, RFID, sensor) dan web monitoring untuk pembelajaran SD.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time">Oct 2023 – Jan 2025</div>
+            <div class="body">
+              <h4>IT Support — SDN 1 Cibiuk Kidul</h4>
+              <p>Menyediakan dukungan teknis, perawatan hardware & software, dan bantuan teknis untuk staf sekolah.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="card small">
+          <strong>Universitas Komputer Indonesia</strong>
+          <div class="muted">B.Sc. Computer Science (2019–2023) — GPA 3.44</div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <div class="card">
+          <p>Email: <a href="mailto:luthfi14kahuripanpwk@gmail.com">luthfi14kahuripanpwk@gmail.com</a></p>
+          <p>WhatsApp: <a href="https://wa.me/6285603405043">+62 856-0340-5043</a></p>
+          <p>GitHub: <a href="https://github.com/Luthfidwip1">https://github.com/Luthfidwip1</a></p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Luthfi Dwi Purwansyah — Built with HTML, CSS. Designed by Copilot.</small>
       </div>
-
-      <div class="job">
-        <h3>IT Support — SDN 1 Cibiuk Kidul, Garut</h3>
-        <p class="date">Oct 2023 – Jan 2025</p>
-        <ul>
-          <li Memberikan dukungan teknis, diagnosa hardware &amp; software, membantu operasional pendidikan dan administrasi.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="grid">
-        <article class="card">
-          <h3><a href="https://github.com/Luthfidwip1/InventoryManagementApi">InventoryManagementApi</a></h3>
-          <p>Inventory Management REST API and Worker Service in ASP.NET Core. Backend-focused project implementing API endpoints, database integration, and worker services for background tasks.</p>
-          <p class="tags">C# · ASP.NET Core · PostgreSQL · Worker Service</p>
-        </article>
-
-        <article class="card">
-          <h3><a href="https://github.com/Luthfidwip1/belajar-ecommerce">belajar-ecommerce</a></h3>
-          <p>Eksperimen dan pembelajaran pembuatan aplikasi e-commerce (C#). Repository eksperimen untuk praktik pengembangan web e-commerce.</p>
-          <p class="tags">C# · Web</p>
-        </article>
-
-        <article class="card">
-          <h3><a href="https://github.com/Luthfidwip1/belajar-fullstack">belajar-fullstack</a></h3>
-          <p>Repository latihan full-stack (frontend + backend) — eksperimen teknologi web, struktur proyek, dan integrasi sederhana.</p>
-          <p class="tags">Full-stack · Practice</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <p>Java · Spring Boot · C#/.NET · Python · FastAPI · TypeScript · React · PostgreSQL · MQTT · Raspberry Pi · Arduino · RFID · IoT Integration</p>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
-      <p><strong>Universitas Komputer Indonesia</strong> — B.Sc. Computer Science (2019–2023), GPA 3.44</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:luthfi14kahuripanpwk@gmail.com">luthfi14kahuripanpwk@gmail.com</a></p>
-      <p>WhatsApp: <a href="https://wa.me/6285603405043">+62 856-0340-5043</a></p>
-      <p>GitHub: <a href="https://github.com/Luthfidwip1">https://github.com/Luthfidwip1</a></p>
-      <p>LinkedIn: Luthfi Dwi Purwansyah</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> Luthfi Dwi Purwansyah — Built with HTML, CSS. Generated by Copilot.</small>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
   <script>
+    // set year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // theme toggle (persist in localStorage)
+    const toggle = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+    const stored = localStorage.getItem('site-theme');
+    if (stored) root.setAttribute('data-theme', stored);
+    function setTheme(t){ root.setAttribute('data-theme', t); localStorage.setItem('site-theme', t); }
+    toggle.addEventListener('click', ()=>{
+      const current = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      setTheme(current);
+    });
   </script>
 </body>
 </html>
