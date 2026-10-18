@@ -2,164 +2,103 @@
 <html lang="id">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Luthfi Dwi Purwansyah — Software Engineer</title>
-  <meta name="description" content="Portfolio — Luthfi Dwi Purwansyah. Software Engineer, full-stack web, backend services, IoT integrations.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142b3b">
+  <title>Luthfi Dwi Purwansyah | Software Engineer</title>
+  <meta name="description" content="Software Engineer di Bandung dengan pengalaman aplikasi web full-stack, backend, REST API, dan integrasi IoT. Lihat pengalaman, proyek, dan resume Luthfi Dwi Purwansyah.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Luthfi Dwi Purwansyah | Software Engineer">
+  <meta property="og:description" content="Aplikasi web, layanan backend, dan integrasi IoT untuk kebutuhan bisnis dan pendidikan.">
+  <meta property="og:url" content="https://luthfidwip1.github.io/">
+  <link rel="canonical" href="https://luthfidwip1.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="page">
-    <header class="site-header">
-      <div class="container header-grid">
-        <div class="brand">
-          <a class="brand-link" href="/">Luthfi Dwi Purwansyah</a>
-          <div class="role">Software Engineer • Full-stack & Backend • IoT</div>
+  <a class="skip-link" href="#main">Langsung ke konten</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Luthfi Dwi Purwansyah, beranda"><span class="brand-mark">ldp<span>.</span></span><span class="brand-caption">SOFTWARE<br>ENGINEER</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation"><span>Menu</span><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+      <nav class="nav" id="navigation" aria-label="Navigasi utama">
+        <a href="#about">Tentang</a><a href="#experience">Pengalaman</a><a href="#projects">Proyek</a><a href="#skills">Keahlian</a>
+        <a class="nav-contact" href="#contact">Mari terhubung <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="small-line"></span> BANDUNG, INDONESIA</p>
+          <h1 id="hero-title">Luthfi Dwi<br>Purwansyah<span class="accent">.</span></h1>
+          <p class="hero-role">Software Engineer <span>/</span> Full-stack &amp; IoT</p>
+          <p class="hero-description">Membangun aplikasi web, layanan backend, dan integrasi perangkat untuk membantu bisnis bekerja lebih baik.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="mailto:luthfi14kahuripanpwk@gmail.com">Hubungi saya <span aria-hidden="true">↗</span></a>
+            <a class="button button-outline" href="assets/resume-luthfi-dwi-purwansyah.docx" download>Unduh resume <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg></a>
+          </div>
+          <div class="hero-socials"><a href="https://github.com/Luthfidwip1" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><span class="social-divider"></span><a href="#experience">Jelajahi pengalaman <span aria-hidden="true">↓</span></a></div>
         </div>
-
-        <nav class="nav">
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-          <button id="theme-toggle" aria-label="Toggle theme">🌗</button>
-        </nav>
+        <div class="profile-composition">
+          <div class="profile-card">
+            <div class="profile-top"><span class="profile-label">PROFIL PROFESIONAL</span><span class="profile-symbol" aria-hidden="true">✳</span></div>
+            <div class="portrait-wrap"><img src="assets/portrait.png" width="116" height="153" alt="Pasfoto Luthfi Dwi Purwansyah mengenakan jas hitam" fetchpriority="high"></div>
+            <div class="profile-name">Luthfi Dwi Purwansyah</div><p class="profile-title">Software Engineer</p>
+            <div class="profile-rule"></div><div class="profile-bottom"><span>WEB · BACKEND · IoT</span><span aria-hidden="true">↗</span></div>
+          </div>
+          <div class="profile-note"><span class="note-icon" aria-hidden="true">&lt;/&gt;</span><div><strong>Dari aplikasi ke perangkat.</strong><span>Terhubung dalam satu sistem.</span></div></div>
+        </div>
       </div>
-    </header>
-
-    <main class="container">
-      <section class="hero">
-        <div class="hero-inner">
-          <div class="hero-content">
-            <h1 class="hero-title">Hi, saya Luthfi — Software Engineer</h1>
-            <p class="hero-sub">Membangun sistem web full-stack, layanan backend, dan solusi IoT untuk monitoring dan automasi operasional.</p>
-
-            <p class="cta">
-              <a class="btn" href="#contact">Hubungi saya</a>
-              <a class="btn ghost" href="https://github.com/Luthfidwip1">Lihat GitHub</a>
-            </p>
-
-            <ul class="skills-list">
-              <li>ASP.NET Core · C#</li>
-              <li>Java · Spring Boot</li>
-              <li>Python · FastAPI</li>
-              <li>TypeScript · React</li>
-              <li>MQTT · Raspberry Pi</li>
-            </ul>
-          </div>
-
-          <div class="hero-aside">
-            <div class="avatar-card">
-              <!-- Replace avatar.png with your photo in repo root to show it -->
-              <img src="/avatar.png" alt="Luthfi Dwi Purwansyah" onerror="this.style.display='none'">
-              <div class="avatar-meta">
-                <div class="name">Luthfi Dwi Purwansyah</div>
-                <div class="meta-muted">Bandung, Indonesia • <a href="https://wa.me/6285603405043">WA</a></div>
-              </div>
-            </div>
-
-            <div class="card contact-card">
-              <a href="mailto:luthfi14kahuripanpwk@gmail.com">luthfi14kahuripanpwk@gmail.com</a>
-              <a href="https://github.com/Luthfidwip1">@Luthfidwip1</a>
-              <div class="muted">LinkedIn: Luthfi Dwi Purwansyah</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="section">
-        <h2>Featured Projects</h2>
-        <div class="cards-grid">
-          <article class="card project">
-            <h3><a href="https://github.com/Luthfidwip1/InventoryManagementApi">InventoryManagementApi</a></h3>
-            <p class="muted">Inventory Management REST API and Worker Service in ASP.NET Core — backend API, DB integration, worker background tasks.</p>
-            <div class="tags">C# · ASP.NET Core · PostgreSQL · Worker Service</div>
-          </article>
-
-          <article class="card project">
-            <h3><a href="https://github.com/Luthfidwip1/belajar-ecommerce">belajar-ecommerce</a></h3>
-            <p class="muted">Eksperimen pembuatan aplikasi e-commerce — praktik arsitektur, modul produk & checkout.</p>
-            <div class="tags">C# · Web</div>
-          </article>
-
-          <article class="card project">
-            <h3><a href="https://github.com/Luthfidwip1/belajar-fullstack">belajar-fullstack</a></h3>
-            <p class="muted">Repository latihan full-stack untuk memahami integrasi frontend-backend dan deployment.</p>
-            <div class="tags">Full-stack · Practice</div>
-          </article>
-        </div>
-      </section>
-
-      <section id="experience" class="section">
-        <h2>Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="time">Sep 2024 – Present</div>
-            <div class="body">
-              <h4>Software Engineer — PT Tri Litho Jaya</h4>
-              <p>Mengembangkan aplikasi internal (Inventory, Helpdesk), REST API, integrasi IoT (MQTT), dan monitoring berbasis web.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="time">Jan 2025 – Oct 2025</div>
-            <div class="body">
-              <h4>Freelance — Software Engineer</h4>
-              <p>Mendesain sistem edukasi interaktif (Raspberry Pi, RFID, sensor) dan web monitoring untuk pembelajaran SD.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="time">Oct 2023 – Jan 2025</div>
-            <div class="body">
-              <h4>IT Support — SDN 1 Cibiuk Kidul</h4>
-              <p>Menyediakan dukungan teknis, perawatan hardware & software, dan bantuan teknis untuk staf sekolah.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="education" class="section">
-        <h2>Education</h2>
-        <div class="card small">
-          <strong>Universitas Komputer Indonesia</strong>
-          <div class="muted">B.Sc. Computer Science (2019–2023) — GPA 3.44</div>
-        </div>
-      </section>
-
-      <section id="contact" class="section">
-        <h2>Contact</h2>
-        <div class="card">
-          <p>Email: <a href="mailto:luthfi14kahuripanpwk@gmail.com">luthfi14kahuripanpwk@gmail.com</a></p>
-          <p>WhatsApp: <a href="https://wa.me/6285603405043">+62 856-0340-5043</a></p>
-          <p>GitHub: <a href="https://github.com/Luthfidwip1">https://github.com/Luthfidwip1</a></p>
-        </div>
-      </section>
-
-    </main>
-
-    <footer class="site-footer">
+      <div class="container hero-foot"><span>APLIKASI DENGAN TUJUAN YANG JELAS</span><div><span>Business applications</span><i></i><span>Backend services</span><i></i><span>Connected devices</span></div></div>
+    </section>
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div><p class="eyebrow section-label">01 / TENTANG SAYA</p><h2 id="about-title">Teknologi yang dekat<br>dengan kebutuhan nyata.</h2></div>
+        <div class="about-copy"><p>Saya adalah Software Engineer dengan pengalaman mengembangkan dan memelihara aplikasi bisnis berbasis web, mulai dari <strong>Inventory Management</strong> dan <strong>Helpdesk Ticketing</strong> hingga monitoring perangkat berbasis IoT.</p><p>Dalam pekerjaan sehari-hari, saya menerjemahkan kebutuhan operasional menjadi fitur aplikasi, merancang REST API, mengintegrasikan database, dan menyelesaikan masalah teknis bersama operator, manajer, serta tim lintas fungsi.</p><a class="text-link" href="assets/resume-luthfi-dwi-purwansyah.docx" download>Lihat resume lengkap <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <div class="container"><dl class="quick-facts"><div><dt>PERAN SAAT INI</dt><dd>Software Engineer<span>PT Tri Litho Jaya</span></dd></div><div><dt>FOKUS PENGEMBANGAN</dt><dd>Full-stack &amp; Backend<span>Aplikasi bisnis · REST API · IoT</span></dd></div><div><dt>PENDIDIKAN</dt><dd>Universitas Komputer Indonesia<span>Computer Science · 2019–2023</span></dd></div></dl></div>
+    </section>
+    <section class="section experience-section" id="experience" aria-labelledby="experience-title">
       <div class="container">
-        <small>© <span id="year"></span> Luthfi Dwi Purwansyah — Built with HTML, CSS. Designed by Copilot.</small>
+        <div class="section-heading"><div><p class="eyebrow section-label">02 / PENGALAMAN</p><h2 id="experience-title">Pengalaman profesional.</h2></div><p>Menghubungkan kebutuhan pengguna<br>dengan solusi teknis yang terstruktur.</p></div>
+        <div class="experience-list">
+          <article class="experience-item" id="experience-trilitho">
+            <div class="experience-meta"><span class="date">Sep 2024 — Sekarang</span><span class="work-type">Bandung</span></div>
+            <div class="experience-detail"><div class="job-heading"><div><h3>Software Engineer</h3><p class="company">PT Tri Litho Jaya</p></div><span class="job-badge">Peran saat ini</span></div><ul><li>Mengembangkan dan memelihara aplikasi Inventory Management dan Helpdesk Ticketing untuk mendukung operasional perusahaan.</li><li>Merancang layanan backend, REST API, dan integrasi database untuk kebutuhan aplikasi serta pengolahan data.</li><li>Menerapkan alur tiket dengan routing berdasarkan kategori untuk pelaporan masalah dan penugasan lintas departemen.</li><li>Mengintegrasikan data sensor IoT melalui MQTT ke aplikasi monitoring web, backend, dan database.</li><li>Berkolaborasi dengan operator, manajer, dan pimpinan untuk menggali kebutuhan, menangani kendala, serta menyempurnakan fitur.</li></ul><div class="tags"><span>Business applications</span><span>REST API</span><span>Database integration</span><span>MQTT</span></div></div>
+          </article>
+          <article class="experience-item" id="experience-freelance">
+            <div class="experience-meta"><span class="date">Jan 2025 — Okt 2025</span><span class="work-type">Freelance · Remote</span></div>
+            <div class="experience-detail"><div class="job-heading"><div><h3>Software Engineer</h3><p class="company">Proyek edukasi interaktif</p></div></div><ul><li>Merancang dan membangun sistem pembelajaran anatomi untuk siswa SD dengan aplikasi web, Raspberry Pi, RFID, dan sensor.</li><li>Mengembangkan monitoring untuk identifikasi siswa, pencatatan aktivitas belajar, dan hasil kuis.</li><li>Memisahkan komunikasi perangkat, logika bisnis, dan antarmuka monitoring agar sistem lebih mudah dipelihara dan dikembangkan.</li></ul><div class="tags"><span>Raspberry Pi</span><span>RFID &amp; sensors</span><span>Web monitoring</span></div></div>
+          </article>
+          <article class="experience-item">
+            <div class="experience-meta"><span class="date">Okt 2023 — Jan 2025</span><span class="work-type">Garut</span></div>
+            <div class="experience-detail"><div class="job-heading"><div><h3>IT Support</h3><p class="company">SDN 1 Cibiuk Kidul</p></div></div><ul><li>Memberikan dukungan teknis untuk komputer, aplikasi, dan perangkat IT dalam kegiatan administrasi serta pembelajaran.</li><li>Mendiagnosis masalah hardware dan software serta membantu staf menggunakan aplikasi dan menyelesaikan kendala teknis.</li></ul><div class="tags"><span>Technical support</span><span>Troubleshooting</span><span>Hardware &amp; software</span></div></div>
+          </article>
+        </div>
       </div>
-    </footer>
-  </div>
-
-  <script>
-    // set year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // theme toggle (persist in localStorage)
-    const toggle = document.getElementById('theme-toggle');
-    const root = document.documentElement;
-    const stored = localStorage.getItem('site-theme');
-    if (stored) root.setAttribute('data-theme', stored);
-    function setTheme(t){ root.setAttribute('data-theme', t); localStorage.setItem('site-theme', t); }
-    toggle.addEventListener('click', ()=>{
-      const current = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-      setTheme(current);
-    });
-  </script>
+    </section>
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow section-label">03 / PROYEK PILIHAN</p><h2 id="projects-title">Dari kebutuhan menjadi sistem.</h2></div><a class="text-link" href="https://github.com/Luthfidwip1" target="_blank" rel="noopener noreferrer">Eksplorasi kode di GitHub <span aria-hidden="true">↗</span></a></div>
+        <div class="projects-grid">
+          <article class="project-card"><div class="project-visual inventory-visual" aria-hidden="true"><div class="mini-app"><div class="mini-sidebar"><b>i.</b><i></i><i></i><i></i></div><div class="mini-content"><span class="mini-caption">INVENTORY OVERVIEW</span><div class="mini-stats"><span></span><span></span><span></span></div><div class="mini-table"><i></i><i></i><i></i><i></i></div></div></div><span class="visual-caption">BUSINESS OPERATIONS</span></div><div class="project-content"><p class="project-category">01 / APLIKASI BISNIS</p><h3>Inventory Management</h3><p>Aplikasi internal untuk mendukung pengelolaan inventori dan alur operasional bisnis melalui layanan backend, API, dan database.</p><div class="tags"><span>Web application</span><span>Backend &amp; data</span></div><a class="project-link" href="#experience-trilitho">PT Tri Litho Jaya <span aria-hidden="true">↗</span></a></div></article>
+          <article class="project-card"><div class="project-visual ticket-visual" aria-hidden="true"><div class="ticket-flow"><div class="ticket-node"><span class="node-dot"></span><span>REQUEST</span><i>01</i></div><div class="flow-connector"></div><div class="ticket-node"><span class="node-dot"></span><span>CATEGORY ROUTING</span><i>02</i></div><div class="flow-connector"></div><div class="ticket-node"><span class="node-dot"></span><span>DEPARTMENT</span><i>03</i></div></div><span class="visual-caption">CONNECTED WORKFLOWS</span></div><div class="project-content"><p class="project-category">02 / ALUR KERJA INTERNAL</p><h3>Helpdesk Ticketing</h3><p>Sistem pelaporan masalah dan permintaan dengan routing berbasis kategori untuk membantu penanganan serta pembagian tugas antar departemen.</p><div class="tags"><span>Ticket management</span><span>Category routing</span></div><a class="project-link" href="#experience-trilitho">PT Tri Litho Jaya <span aria-hidden="true">↗</span></a></div></article>
+          <article class="project-card"><div class="project-visual iot-visual" aria-hidden="true"><div class="device-system"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="device-core"><svg viewBox="0 0 48 48"><rect x="12" y="12" width="24" height="24" rx="4"/><path d="M20 20h8v8h-8zM18 6v6m12-6v6M18 36v6m12-6v6M6 18h6m-6 12h6m24-12h6m-6 12h6"/></svg></div><span class="device-chip chip-one">RFID</span><span class="device-chip chip-two">WEB</span><span class="device-chip chip-three">SENSOR</span></div><span class="visual-caption">HARDWARE MEETS SOFTWARE</span></div><div class="project-content"><p class="project-category">03 / EDUKASI &amp; IoT</p><h3>Interactive Learning System</h3><p>Media belajar anatomi berbasis Raspberry Pi, RFID, dan sensor dengan monitoring web untuk aktivitas siswa serta pencatatan hasil kuis.</p><div class="tags"><span>Raspberry Pi</span><span>RFID</span><span>Sensor integration</span></div><a class="project-link" href="#experience-freelance">Proyek freelance <span aria-hidden="true">↗</span></a></div></article>
+        </div>
+        <div class="code-note"><span class="code-note-icon" aria-hidden="true">{ }</span><p><strong>Ingin melihat kode?</strong> Eksplorasi repository publik saya, termasuk InventoryManagementApi.</p><a href="https://github.com/Luthfidwip1/InventoryManagementApi" target="_blank" rel="noopener noreferrer">Lihat repository <span aria-hidden="true">↗</span></a></div>
+        <p class="project-disclaimer">Visual di atas merupakan ilustrasi konsep. Ringkasan proyek berasal dari pengalaman kerja dan freelance.</p>
+      </div>
+    </section>
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="container skills-layout"><div class="skills-intro"><p class="eyebrow section-label">04 / KEAHLIAN</p><h2 id="skills-title">Perangkat yang saya<br>gunakan untuk membangun.</h2><p>Pengembangan aplikasi, integrasi data, dan komunikasi perangkat dengan perhatian pada maintainability serta integritas data.</p></div><div class="skill-groups"><div class="skill-group"><span class="skill-index">01</span><div><h3>Web &amp; application development</h3><p>Java · Spring Boot · C# / .NET · Python · FastAPI · TypeScript · React</p></div></div><div class="skill-group"><span class="skill-index">02</span><div><h3>Backend &amp; data</h3><p>REST API · PostgreSQL · Database integration · Batch processing · Idempotent processing · Outbox pattern</p></div></div><div class="skill-group"><span class="skill-index">03</span><div><h3>IoT &amp; system integration</h3><p>MQTT · Raspberry Pi · Arduino · Microcontrollers · RFID · Sensor integration · Device-to-server communication</p></div></div><div class="skill-group"><span class="skill-index">04</span><div><h3>Engineering &amp; collaboration</h3><p>Reliability · Fault tolerance · Separation of concerns · Technical documentation · Troubleshooting · Kolaborasi lintas fungsi</p></div></div></div></div>
+    </section>
+    <section class="section education-section" id="education" aria-labelledby="education-title"><div class="container"><p class="eyebrow section-label">05 / PENDIDIKAN &amp; AKTIVITAS</p><div class="education-grid"><div><h2 id="education-title">Fondasi yang terus<br>dikembangkan.</h2></div><div class="education-details"><article class="education-item"><span class="date">2019 — 2023</span><h3>Universitas Komputer Indonesia</h3><p>Computer Science · Bandung</p><span class="gpa">IPK 3,44</span></article><article class="education-item activity-item"><span class="date">Okt 2019 — Okt 2023</span><h3>Himpunan Mahasiswa Teknik Komputer UNIKOM</h3><p class="activity-role">Anggota Divisi Informasi &amp; Komunikasi</p><p>Mengelola kanal media sosial, mendesain materi visual, dan mendokumentasikan kegiatan organisasi untuk publikasi serta arsip internal.</p></article></div></div></div></section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="container"><div class="contact-top"><div><p class="eyebrow">06 / MARI TERHUBUNG</p><h2 id="contact-title">Ada peluang atau ide?<br>Mari mulai percakapan<span>.</span></h2><p>Untuk diskusi posisi Software Engineer, pengembangan<br class="desktop-break"> aplikasi, atau kolaborasi teknis, hubungi saya.</p><a class="button button-light" href="mailto:luthfi14kahuripanpwk@gmail.com">Kirim email <span aria-hidden="true">↗</span></a></div><div class="contact-links"><a href="mailto:luthfi14kahuripanpwk@gmail.com"><span>EMAIL</span><strong>luthfi14kahuripanpwk@gmail.com</strong><i aria-hidden="true">↗</i></a><a href="https://wa.me/6285603405043" target="_blank" rel="noopener noreferrer"><span>WHATSAPP</span><strong>+62 856-0340-5043</strong><i aria-hidden="true">↗</i></a><a href="https://github.com/Luthfidwip1" target="_blank" rel="noopener noreferrer"><span>GITHUB</span><strong>@Luthfidwip1</strong><i aria-hidden="true">↗</i></a></div></div><footer class="site-footer"><a class="footer-name" href="#home">Luthfi Dwi Purwansyah<span>.</span></a><p>© <span id="year">2026</span> · Bandung, Indonesia</p><a href="#home">Kembali ke atas <span aria-hidden="true">↑</span></a></footer></div></section>
+  </main>
 </body>
 </html>
